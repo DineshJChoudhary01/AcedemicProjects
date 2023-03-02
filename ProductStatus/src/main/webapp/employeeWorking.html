@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Employee Working</title>
+    <style>
+      body {
+        background-image: url("e.jpeg");
+        background-size: cover;
+        height: 80vh;
+        width: 80vw;
+      }
+
+      .borderr {
+        margin-left: 22rem;
+        margin-top: 8rem;
+        border-style: solid;
+        border-color: black;
+        background-color: white;
+        margin-right: -3rem;
+      }
+      .tdata {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+  <form action="EmployeeWorking" method="post">
+    <table border="2" class="borderr">
+      <tr>
+        <td class="tdata">Delivery Agent Name:</td>
+        <td class="tdata">
+          <select name="agentName" class="tdata">
+            <option value="Ganesh" class="tdata" >Ganesh</option>
+            <option value="Dinesh" class="tdata">Dinesh</option>
+            <option value="Mahesh" class="tdata" >Mahesh</option>
+            <option value="Vivek" class="tdata">Vivek</option>
+            <option value="Akhilesh" class="tdata">Akhilesh</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="tdata">Customer Address :</td>
+        <td class="tdata">
+          <input
+            type="text"
+           
+            name="address" class="tdata"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td class="tdata">Product Details</td>
+        <td class="tdata">
+          <input
+            type="text"
+           
+            name="productDetails" class="tdata"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" class="tdata">
+          <input
+            type="submit"
+            value="Submit"
+            
+            style="height: 3rem; width: 37rem"class="tdata"
+          />
+        </td>
+      </tr>
+    </table>
+    </form>
+    <table border="2" style="background-color: white; border-color: black;border-style: solid;margin-left: 22rem;">
+    		<tr>
+    		<td class="tdata"><a href="listOfEntry.jsp" style="margin-left:rem; color:green" class="tdata"> List of Entry</a></td>
+    		<td class="tdata"><a href="Logout" style="margin-left:rem;color:red" class="tdata">Logout</a></td>
+    		</tr>
+    </table>
+             
+  </body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Working</title>
+</head>
+<body>
+<form action="EmployeeWorking" method="post">
+
+Agent Name:<select name="agentName">
+            <option value="Rohit">Rohit</option>
+            <option value="Manoj">Manoj</option>
+            <option value="Rahul">Rahul</option>
+            <option value="Vivek">Vivek</option>
+            <option value="Hari">Hari</option>
+        </select><br/>
+
+
+Customer Address:<input type="text" name="address"/><br/>
+Product Details:<input type="text" name="productDetails"/><br/>
+<input type="submit" value="submit"/>
+</form>
+
+<a href="listOfEntry.jsp" style="margin-left:10rem" class="tdata"> List of Entry</a>
+
+</body>
+</html> -->
